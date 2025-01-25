@@ -1,0 +1,24 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+@if ( Network.OwnerConnection is Connection owner && owner != Connection.Local )
+{
+    <root>
+
+        <div class="card">
+            <div class="avatar" style="background-image: url( avatar:@owner.SteamId )"></div>
+            <div class="name">@owner.DisplayName</div>
+        </div>
+
+    </root>
+}
+
+@code
+{
+    protected override void OnEnabled()
+    {
+        base.OnEnabled();
+    }
+    protected override int BuildHash() => System.HashCode.Combine(Network.OwnerConnection);
+}

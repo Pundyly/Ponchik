@@ -1,0 +1,149 @@
+{
+  "RootObject": {
+    "__guid": "7c796b63-0783-4df4-80f6-d9b39a470037",
+    "Flags": 0,
+    "Name": "debil",
+    "Scale": "0.5,0.5,1",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "7e917cbc-08c8-4c6a-8c90-da793a5f3c27",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/dev/box.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "Sandbox.CharacterController",
+        "__guid": "9a715e34-a11a-4b32-9122-c69af4c0a4cd",
+        "Acceleration": 10,
+        "Bounciness": 0.3,
+        "GroundAngle": 45,
+        "Height": 64,
+        "IgnoreLayers": "",
+        "Radius": 16,
+        "StepHeight": 18,
+        "UseCollisionRules": false
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "b474ad8c-4de8-458b-8ffe-e29a5cfe93f4",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {
+          "Pitch": true,
+          "Yaw": true,
+          "Roll": true
+        },
+        "MassCenterOverride": "0,0,0",
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "OverrideMassCenter": false,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "a25713a0-ea21-4ca8-a49a-d823790657f6",
+        "Center": "0,0,0",
+        "IsTrigger": false,
+        "Scale": "50,50,50",
+        "Static": false
+      },
+      {
+        "__type": "fixedPlayer",
+        "__guid": "a94460a4-f2c4-4c2d-b44b-7ce9a7e801f8",
+        "cam": {
+          "_type": "gameobject",
+          "go": "62c7409b-7e7d-4282-ba02-28b235a79980"
+        },
+        "cc": {
+          "_type": "component",
+          "component_id": "9a715e34-a11a-4b32-9122-c69af4c0a4cd",
+          "go": "7c796b63-0783-4df4-80f6-d9b39a470037",
+          "component_type": "CharacterController"
+        },
+        "jumps": 2,
+        "jumpsnow": 0
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "380cca48-c3cf-429d-844a-6ed5b0668ae2",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Scale": "51,51,51",
+        "Static": false
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "1e855ed8-14c6-4ab0-9a54-6364a3674ad6",
+        "Flags": 0,
+        "Name": "World",
+        "Position": "0,0,62.68378",
+        "Scale": "1,10,10",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "60b77d95-1035-481f-9cb7-497279f4d783",
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "PanelSize": "512,512",
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "NameTag",
+            "__guid": "95e37549-cf7a-4091-acc9-cae6cc1af1b5"
+          }
+        ]
+      },
+      {
+        "__guid": "62c7409b-7e7d-4282-ba02-28b235a79980",
+        "Flags": 0,
+        "Name": "Local Camera",
+        "Position": "-1000,19,575",
+        "Rotation": "0,0.3826835,0,0.9238795",
+        "Tags": "maincamera",
+        "Components": [
+          {
+            "__type": "Sandbox.CameraComponent",
+            "__guid": "b8560a87-e666-4f30-b731-0a6bb72c2a92",
+            "BackgroundColor": "0.33333,0.46275,0.52157,1",
+            "ClearFlags": "All",
+            "FieldOfView": 60,
+            "IsMainCamera": true,
+            "Orthographic": false,
+            "OrthographicHeight": 1204,
+            "Priority": 1,
+            "RenderExcludeTags": "",
+            "RenderTags": "",
+            "TargetEye": "None",
+            "Viewport": "0,0,1,1",
+            "ZFar": 10000,
+            "ZNear": 10
+          },
+          {
+            "__type": "Camcontrol",
+            "__guid": "8312e985-0d0f-4be5-ae4f-2d077eccba37",
+            "cam": {
+              "_type": "gameobject",
+              "go": "62c7409b-7e7d-4282-ba02-28b235a79980"
+            }
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

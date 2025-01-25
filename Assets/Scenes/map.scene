@@ -1,0 +1,91 @@
+{
+  "__guid": "410506be-d0a0-443f-878a-7b3172655c24",
+  "GameObjects": [
+    {
+      "__guid": "9f59b11f-f3d7-40b8-8c0b-e3825b1b55c6",
+      "Flags": 0,
+      "Name": "Screen",
+      "Position": "125.4121,-14.16926,-80.40889",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "90fa58c4-d53a-4667-971c-b8237233c75a",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "Panel",
+          "__guid": "46857330-b1c5-4e1d-803c-3837c1fb730f",
+          "MyStringValue": "To sprint hold shift\nTo Reset Rotation use R"
+        }
+      ]
+    },
+    {
+      "__guid": "51c2040c-62ca-4cdb-aebe-9a5c366e43e0",
+      "Flags": 0,
+      "Name": "Network Helper",
+      "Position": "-12.60859,0.4853058,95.63154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.NetworkHelper",
+          "__guid": "2eca3f35-b7a6-4052-9d30-06751a673750",
+          "PlayerPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/debil.prefab"
+          },
+          "SpawnPoints": [],
+          "StartServer": true
+        }
+      ]
+    },
+    {
+      "__guid": "b676adfc-5d47-4bc8-ba24-baedbc2c02c0",
+      "Flags": 0,
+      "Name": "Map",
+      "Position": "39.1657,-103.2067,-141.7674",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "b1c3d86a-23e4-4cfd-b2fd-cd469d47ccd3",
+          "__version": 1,
+          "EnableCollision": true,
+          "MapName": "bananapeelsteam.sb_cartoon_sity",
+          "NoOrigin": true,
+          "UseMapFromLaunch": true
+        }
+      ],
+      "Children": []
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "map",
+  "Description": "",
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
